@@ -17,8 +17,8 @@ $(function () {
           $('input[name="maxPrice"]').val("$" + ui.values[1]);
       }
    });
-    $('input[name="minPrice"]').val(
+    $('input[name="minPrice"]').val("$" +
     $('#slider_price').slider('values',0) );
-    $('input[name="maxPrice"]').val(
+    $('input[name="maxPrice"]').val("$" +
     $('#slider_price').slider('values',1) );
 });

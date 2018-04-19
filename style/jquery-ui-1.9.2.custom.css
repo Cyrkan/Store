@@ -183,7 +183,7 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
 .ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
 
 .ui-slider-horizontal { height: 0.16vmax; }
-.ui-slider-horizontal .ui-slider-handle { top: -0.7vmax; margin-left: -.6em; }
+.ui-slider-horizontal .ui-slider-handle { top: -0.9vmax; margin-left: -.6em; }
 .ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
 .ui-slider-horizontal .ui-slider-range-min { left: 0; }
 .ui-slider-horizontal .ui-slider-range-max { right: 0; }
@@ -243,7 +243,7 @@ body .ui-tooltip { border-width: 2px; }
 .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #454545; text-decoration: none; }
 .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #cccccc; background: #ededed; font-weight: normal; color: #2b2b2b; }
 .ui-state-hover a, .ui-state-hover a:hover, .ui-state-hover a:link, .ui-state-hover a:visited { color: #2b2b2b; text-decoration: none; }
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #003eff; background: #007fff; font-weight: normal; color: #ffffff; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid rgba(0, 99, 52, 0.95); background: #00915b; font-weight: normal; color: #ffffff; }
 .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #ffffff; text-decoration: none; }
 
 /* Interaction Cues
