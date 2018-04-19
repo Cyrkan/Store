@@ -355,3 +355,8 @@ input[type="checkbox"]:checked + label{
     width: 30%;
     padding-top: 0.44vmax;
 }
+.padding-box{
+    padding: 0 2.25vmax;
+    padding-bottom: 1.66vmax;
+    margin-top: 1.66vmax;
+}
