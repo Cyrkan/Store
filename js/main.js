@@ -21,4 +21,28 @@ $(function () {
     $('#slider_price').slider('values',0) );
     $('input[name="maxPrice"]').val("$" +
     $('#slider_price').slider('values',1) );
+
+    $('#cart, .title_cart').click(function () {
+       $('#cart_box').toggleClass('open')
+    });
+    $("#sign").click(function () {
+       $("#black_fill").toggleClass("open");
+        $("#modal").toggleClass("open");
+    });
+    $("#close_modal, #black_fill").click(function () {
+        $("#black_fill").toggleClass("open");
+        $("#modal").toggleClass("open");
+    });
+    $("#search_button").click(function () {
+       $('#search_panel').toggleClass('open');
+    });
+
+    $('#load_more').click(function (event) {
+        event.preventDefault();
+        $('.list_product').append('<a href="#" class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">\n' +
+            ' <div class="img_product"><img src="./img/png/image.png" alt="product"> </div> <h2>Our Legacy Splash Jacquard Knit</h2> <p>Black Grey Plants</p> <p class="price">$290</p></a> <a href="#" class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">\n' +
+            ' <div class="img_product"><img src="./img/png/image.png" alt="product"> </div> <h2>Our Legacy Splash Jacquard Knit</h2> <p>Black Grey Plants</p> <p class="price">$290</p></a> <a href="#" class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">\n' +
+            ' <div class="img_product"><img src="./img/png/image.png" alt="product"> </div> <h2>Our Legacy Splash Jacquard Knit</h2> <p>Black Grey Plants</p> <p class="price">$290</p></a>')
+    });
+
 });

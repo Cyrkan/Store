@@ -11,6 +11,42 @@
     <link rel="stylesheet" href="style/jquery-ui-1.9.2.custom.css">
 </head>
 <body>
+<div id="modal">
+    <div id="close_modal">
+        <svg width="64" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
+             xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 64 64">
+            <path d="M28.941,31.786L0.613,60.114c-0.787,0.787-0.787,2.062,0,2.849c0.393,0.394,0.909,0.59,1.424,0.59   c0.516,0,1.031-0.196,1.424-0.59l28.541-28.541l28.541,28.541c0.394,0.394,0.909,0.59,1.424,0.59c0.515,0,1.031-0.196,1.424-0.59   c0.787-0.787,0.787-2.062,0-2.849L35.064,31.786L63.41,3.438c0.787-0.787,0.787-2.062,0-2.849c-0.787-0.786-2.062-0.786-2.848,0   L32.003,29.15L3.441,0.59c-0.787-0.786-2.061-0.786-2.848,0c-0.787,0.787-0.787,2.062,0,2.849L28.941,31.786z"/>
+        </svg>
+    </div>
+
+
+    <div id="content_modal">
+        <form action="">
+            <div class="input">
+                <input type="text" name="login" placeholder="login">
+            </div>
+            <div class="input"><input type="password" name="password" placeholder="password"></div>
+            <button class="submit">sign in</button>
+        </form>
+    </div>
+</div>
+<div id="black_fill"></div>
+<div id="cart_box" class="anime main_flex__nowrap flex__jcontent_between flex__align-items_center">
+    <div class="title_cart main_flex__nowrap flex__jcontent_between flex__align-items_center">
+        <p>Ваша корзина</p>
+
+        <svg version="1.1" id="next" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+	<path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+		c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z
+		"/>
+</svg>
+
+
+    </div>
+    <div class="content_cart"></div>
+    <button id="order" type="button"> Order</button>
+</div>
 <header class="dark">
     <div id="top">
         <div class="wrap main_flex__nowrap flex__align-items_center flex__jcontent_between">
@@ -67,6 +103,9 @@
                 <li><a href="#">BRANDS</a></li>
                 <li><a href="#">BLOG</a></li>
             </nav>
+            <div id="search_panel">
+                <input type="text" placeholder="Search">
+            </div>
             <div id="search_button">
                 <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -270,7 +309,7 @@
                 PRICE RANGE
             </div>
             <div class="content_filter padding-box">
-               <div id="slider_price"></div>
+                <div id="slider_price"></div>
                 <div class="price_box main_flex__nowrap flex__jcontent_between flex__align-items_center">
                     <input type="text" name="minPrice" value="">
                     <input type="text" name="maxPrice" value="">
@@ -366,6 +405,73 @@
         </button>
     </div>
 </main>
+
+<footer>
+    <div class="wrap">
+        <div>
+            <nav id="footer_nav" class="main_flex__nowrap flex__jcontent_center flex__align-items_center">
+                <li><a href="#">legal information</a></li>
+                <li><a href="#">terms</a></li>
+                <li><a href="#" data privacy></a></li>
+                <li><a href="#">sizing</a></li>
+                <li><a href="#">shipping</a></li>
+                <li><a href="#">contacr</a></li>
+            </nav>
+        </div>
+        <div id="news_letter" class="main_flex__nowrap flex__jcontent_center flex__align-items_center">
+
+            <p>NEWSLETTER</p>
+            <input type="email" placeholder="E-mail">
+        </div>
+        <div>
+            <ul id="soc_list" class="main_flex__nowrap flex__jcontent_center flex__align-items_center">
+                <li><a href="#" target="_blank">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         viewBox="0 0 11 18">
+                        <defs>
+                            <path id="ngg1a"
+                                  d="M553.5 1698.18h-2.55v-1.66c0-.62.42-.77.71-.77h1.8v-2.74l-2.48-.01c-2.76 0-3.39 2.04-3.39 3.35v1.83H546v2.83h1.6v7.99h3.35v-8h2.26z"/>
+                        </defs>
+                        <g>
+                            <g transform="translate(-544 -1692)">
+                                <use xlink:href="#ngg1a"/>
+                            </g>
+                        </g>
+                    </svg>
+                </a></li>
+                <li><a href="#" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         viewBox="0 0 21 15">
+                        <defs>
+                            <path id="4x52a"
+                                  d="M606.95 1697.28l-.03-.03a3.16 3.16 0 0 0-2.31-.83l-.03-.07h.02c.8-.18 1.28-.36 1.42-.56.05-.16-.01-.24-.19-.27-.4.05-.77.14-1.1.26.42-.26.58-.44.49-.53a2.2 2.2 0 0 0-1.34.61c.18-.28.24-.44.2-.46-.22.15-.42.3-.59.48-.35.38-.64.73-.86 1.05v.03a9.2 9.2 0 0 0-1.2 2.65l-.08.07-.02.01c-.34-.4-.74-.75-1.23-1.02-.57-.36-1.24-.7-2.02-1.03-.84-.42-1.7-.77-2.57-1.04 0 .93.47 1.68 1.41 2.22v.01c-.33 0-.65.05-.96.14.06.86.7 1.46 1.9 1.79v.02c-.47-.03-.86.13-1.17.46.4.75 1.1 1.1 2.12 1.08-.2.1-.36.2-.46.33-.19.19-.25.4-.19.66.22.38.62.55 1.2.53l.03.04-.02.01c-1 1-2.2 1.44-3.62 1.35h-.02c-.86 0-1.79-.4-2.78-1.19a8.57 8.57 0 0 0 3.98 3.02c1.89.6 3.78.64 5.66.13h.03a9 9 0 0 0 4.66-3.12c.59-.83.96-1.61 1.1-2.37.96.03 1.65-.23 2.08-.79l-.01-.02c-.32.11-.94.08-1.87-.1v-.1h.01c1.01-.11 1.6-.42 1.8-.94-.7.26-1.4.27-2.09.02a4.26 4.26 0 0 0-1.35-2.5z"/>
+                        </defs>
+                        <g>
+                            <g transform="translate(-591 -1694)">
+                                <use xlink:href="#4x52a"/>
+                            </g>
+                        </g>
+                    </svg>
+                </a></li>
+                <li><a href="#" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         viewBox="0 0 18 18">
+                        <defs>
+                            <path id="7y1ca"
+                                  d="M643.25 1694a1.3 1.3 0 0 0-1.25 1.29v3.24h4.84a4.35 4.35 0 0 1 2.54-1.02c.95 0 1.8.47 2.55 1.02H657v-3.24c0-.68-.61-1.29-1.34-1.29zm12.21 3.52h-2c-.28 0-.53-.2-.53-.44v-1.63c0-.24.25-.42.54-.42h2c.28 0 .5.18.5.42v1.63c0 .24-.22.44-.5.44zm-3.53 4.19a2.6 2.6 0 0 0-2.55-2.64 2.6 2.6 0 0 0-2.54 2.64 2.6 2.6 0 0 0 2.54 2.65 2.6 2.6 0 0 0 2.55-2.65zm1.71-.07c0 2.33-1.85 4.2-4.13 4.2a4.17 4.17 0 0 1-4.01-5.18H642v7c0 .73.57 1.34 1.25 1.34h12.5c.68 0 1.25-.61 1.25-1.34v-7h-3.73c.34.32.37.65.37.98z"/>
+                        </defs>
+                        <g>
+                            <g transform="translate(-641 -1692)">
+                                <use xlink:href="#7y1ca"/>
+                            </g>
+                        </g>
+                    </svg>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 <script src="js/jquery-1.8.3.js"></script>
 <script src="js/jquery-ui-1.9.2.custom.js"></script>
 <script src="js/main.js"></script>
